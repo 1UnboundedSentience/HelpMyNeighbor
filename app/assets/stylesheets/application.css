@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background-color: white;
+}
+header > h1 {
+  font-family: fantasy;
+  font-size: 30px
+}
+
+header > nav {
+  font-size: 14px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
