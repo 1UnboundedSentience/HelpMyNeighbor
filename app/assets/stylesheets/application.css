@@ -14,7 +14,7 @@
  *= require_self
  */
 .form-control {
-  width: 50%;
+  width: 90%;
 }
 
 .debug {
@@ -22,7 +22,29 @@
 }
 
 footer {
+  background-color: #333;
+  color: white;
+  height: 75px;
+}
+
+.services {
   background-color: #ccc;
-  color: #222;
-  height: 100px;
+  padding-bottom: 30px;
+}
+
+.jumbotron {
+  padding-bottom: 10px;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.contact-page {
+  margin-top: 125px;
+  margin-bottom: 300px;
+}
+
+.paragraph {
+  font-size: 20px;
 }
