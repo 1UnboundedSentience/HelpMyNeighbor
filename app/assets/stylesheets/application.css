@@ -16,3 +16,13 @@
 .form-control {
   width: 50%;
 }
+
+.debug {
+  border: 1px red solid;
+}
+
+footer {
+  background-color: #ccc;
+  color: #222;
+  height: 100px;
+}
