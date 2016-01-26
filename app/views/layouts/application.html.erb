@@ -7,8 +7,24 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <a href="/" class="navbar-brand">Help My Neighbor</a>
+      <ul class="nav navbar-nav pull-right">
+        <li><a href="/about">About</a></li>
+        <li><a href="/static_pages/mapsearch.html">Search on Map</a></li>
+        <li><a href="/shelter">Shelter</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<%= yield %>
+  <%= yield %>
 
+  <footer>
+    <div class="container">
+      <p>All rights reserved &copy; Help My Neighbor 2016</p>
+    </div>
+  </footer>
 </body>
 </html>
