@@ -4,4 +4,10 @@
 # Examples:
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+<<<<<<< HEAD
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+=======
+#   Mayor.create(name: 'Emanuel', city: cities.first)
+#require 'faker'
+
+>>>>>>> db6344d24f4135fa0ce1a19ce303bde115d75066

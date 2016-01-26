@@ -24,6 +24,7 @@
   border: 1px black dashed;
 }
 
+
 .form-control {
   width: 90%;
 }
@@ -64,6 +65,7 @@ footer {
 .paragraph {
   font-size: 20px;
 }
+
 .panel {
     position: absolute;
     width: 20%;
