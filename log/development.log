@@ -488,3 +488,15 @@ Started GET "/assets/gmaps/google.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f
 
 
 Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-01-27 13:47:13 -0800
+
+
+Started GET "/" for ::1 at 2016-01-27 13:52:11 -0800
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1487ms (Views: 1466.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/static_pages/mapsearch.html" for ::1 at 2016-01-27 13:52:20 -0800
+Processing by StaticPagesController#mapsearch as HTML
+  Rendered static_pages/mapsearch.html within layouts/application (0.7ms)
+Completed 200 OK in 216ms (Views: 214.8ms | ActiveRecord: 0.0ms)

@@ -9,7 +9,7 @@ class StaticPagesController < ApplicationController
   end
 
   def mapsearch
-    @url = "https://maps.googleapis.com/maps/api/js?key=" + ENV['JASONMAPAPI'] +"&libraries=places&callback=initAutocomplete"
+    @url = "https://maps.googleapis.com/maps/api/js?key=" + ENV['MAPAPIKEY'] +"&libraries=places&callback=initAutocomplete"
   end
 
   def muni
@@ -23,6 +23,6 @@ class StaticPagesController < ApplicationController
     redirect_to controller: 'static_pages', action: 'muni', muni_info: @muni_info
   end
   def map
-    @url = "https://maps.googleapis.com/maps/api/js?key=" + ENV['JASONMAPAPI'] +"&libraries=places&callback=initAutocomplete"
+    @url = "https://maps.googleapis.com/maps/api/js?key=" + ENV['MAPAPIKEY'] +"&libraries=places&callback=initAutocomplete"
   end
 end
