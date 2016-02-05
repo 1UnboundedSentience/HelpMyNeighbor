@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>MapBox Search</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+</head>
+<body>
+<style>
+.search-ui {
+  position:absolute;
+  top:10px;
+  right:10px;
+  z-index:1000;
+  }
+</style>
+
+<!-- jQuery is required for this example. -->
+<script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
+<div id='map'></div>
+<input id='search' class='search-ui' placeholder='Enter state code' />
+
+<script>
+L.mapbox.accessToken = '<your access token here>';
+var map = L.mapbox.map('map', 'mapbox.streets')
+    .setView([40, -95], 4);
+
+var featureLayer = L.mapbox.featureLayer().addTo(map);
+
+$('#search').keyup(search);
+
+var csvLayer = omnivore.csv('/mapbox.js/assets/data/airports.csv', null, L.mapbox.featureLayer())
+    .addTo(map);
+
+function search() {
+    // get the value of the search input field
+    var searchString = $('#search').val().toLowerCase();
+
+    csvLayer.setFilter(showState);
+
+    // here we're simply comparing the 'state' property of each marker
+    // to the search string, seeing whether the former contains the latter.
+    function showState(feature) {
+        return feature.properties.state
+            .toLowerCase()
+            .indexOf(searchString) !== -1;
+    }
+}
+</script>
+</body>
+</html>
