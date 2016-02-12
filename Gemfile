@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ruby '2.2.2'
 gem 'pg'
 
 #gem 'rails_12factor', group: :production
