@@ -9,7 +9,7 @@ class StaticPagesController < ApplicationController
   end
 
   def mapsearch
-    @url = "https://maps.googleapis.com/maps/api/js?key=" + ENV['JASONMAPAPI'] +"&libraries=places&callback=initAutocomplete"
+    @url = "https://maps.googleapis.com/maps/api/js?key=AIzaSyB0oImO7L8nruOr4zvxIhNL8MhkfcTZWbY&libraries=places&callback=initAutocomplete"
   end
 
   def muni

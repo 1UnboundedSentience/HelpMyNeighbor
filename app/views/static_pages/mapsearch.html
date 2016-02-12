@@ -129,15 +129,10 @@ function initAutocomplete() {
         generatedMarker.position.lat() + " latitude, " + generatedMarker.position.lng() + " longitude"
       var infowindow = new google.maps.InfoWindow({
         content: contentString,
-        //setPosition: //generatedMarker.position
       });
-      //infowindow.setContent()
-      //debugger
       generatedMarker.addListener('click', function(event) {
-            //debugger
             infowindow.open(map, generatedMarker);
             infowindow.setPosition(event.latLng);
-            //map.setCenter(generatedMarker.getPosition());
       });
       markers.push(generatedMarker);
 
