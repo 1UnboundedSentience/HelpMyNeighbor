@@ -9,13 +9,24 @@
 <body>
   <nav class="navbar navbar-inverse">
     <div class="container">
-      <a href="/" class="navbar-brand">Help My Neighbor</a>
-      <ul class="nav navbar-nav pull-right">
-        <li><a href="/about">About</a></li>
-        <li><a href="/static_pages/mapsearch.html">Search on Map</a></li>
-        <li><a href="/shelter">Shelter</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expande="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/" class="navbar-brand">Help My Neighbor</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/about">About</a></li>
+          <li><a href="/static_pages/mapsearch.html">Search on Map</a></li>
+          <li><a href="/shelter">Shelter</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -32,5 +43,7 @@
       <p>All rights reserved &copy; Help My Neighbor 2016</p>
     </div>
   </footer>
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>
