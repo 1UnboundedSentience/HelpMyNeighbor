@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  root 'static_pages#home'
   get 'static_pages/map'
   get 'static_pages/mapsearch'
   get 'static_pages/muni'
@@ -8,6 +9,5 @@ Rails.application.routes.draw do
 
   get '/about' => 'static_pages#about'
   get '/contact' => 'static_pages#contact'
-  root 'static_pages#home'
   get '/shelter' => 'static_pages#shelter'
 end
