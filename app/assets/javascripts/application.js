@@ -13,4 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require react
+//= require react_ujs
+//= require components
 //= require_tree .
+//= require underscore
+//= require gmaps/google
+//= require map.js
