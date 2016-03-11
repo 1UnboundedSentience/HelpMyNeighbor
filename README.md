@@ -12,7 +12,7 @@ To facilitate this we have developed a website that will make it easy for a home
 * Rails
 * Javascript
 * React
-* Google Map API
+* Googe Map API
 * PostgreSQL
 * JQuery
 * HTML5
