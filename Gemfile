@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.2.2'
 gem 'pg'
+gem 'react-rails', '~> 1.6.0'
 
 #gem 'rails_12factor', group: :production
 
